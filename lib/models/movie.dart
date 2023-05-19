@@ -16,6 +16,11 @@ class Movie {
   double voteAverage;
   int voteCount;
 
+  get fullPosterImg {
+    if (posterPath != null) return 'https://image.tmdb.org/t/p/w500$posterPath';
+    return 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png';
+  }
+
   Movie({
     required this.adult,
     this.backdropPath,
