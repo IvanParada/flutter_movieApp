@@ -107,7 +107,7 @@ class _PosterAndTitle extends StatelessWidget {
                     maxLines: 2),
                 Row(
                   children: [
-                    const Icon(Icons.star, size: 15, color: Colors.grey),
+                    const Icon(Icons.star, size: 15, color: Colors.amber),
                     const SizedBox(width: 5),
                     Text(movie.voteAverage.toString(),
                         style: textTheme.bodySmall),
