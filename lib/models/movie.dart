@@ -17,13 +17,16 @@ class Movie {
   int voteCount;
 
   get fullPosterImg {
-    if (posterPath != null) return 'https://image.tmdb.org/t/p/w500$posterPath';
+    if (posterPath != null) {
+      return 'https://image.tmdb.org/t/p/w500$posterPath';
+    }
     return 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png';
   }
 
   get fullBackdropPath {
-    if (posterPath != null)
+    if (posterPath != null) {
       return 'https://image.tmdb.org/t/p/w500$backdropPath';
+    }
     return 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png';
   }
 
