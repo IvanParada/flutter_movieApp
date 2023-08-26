@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:app_pelicula/providers/movies_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 import '../search/search_delegate.dart';
@@ -15,14 +16,14 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.grey.shade200,
         appBar: AppBar(
-          title: const Text('Películas en cine'),
+          title: const Text('Películas en cine',style: TextStyle(letterSpacing: 3)),
           centerTitle: true,
           elevation: 0,
           actions: [
             IconButton(
               onPressed: () =>
                   showSearch(context: context, delegate: MovieSearchDelegate()),
-              icon: const Icon(Icons.search),
+              icon: const FaIcon(Icons.search),
             )
           ],
         ),
