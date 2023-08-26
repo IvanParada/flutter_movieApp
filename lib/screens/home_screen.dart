@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:app_pelicula/providers/movies_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final moviesProvider = Provider.of<MoviesProvider>(context);
     return Scaffold(
+        backgroundColor: Colors.grey.shade200,
         appBar: AppBar(
           title: const Text('Películas en cine'),
           centerTitle: true,
@@ -30,10 +32,26 @@ class HomeScreen extends StatelessWidget {
               CardSwiper(
                 movies: moviesProvider.onDisplayMovies,
               ),
-              MovieSlider(
-                movies: moviesProvider.popularMovies,
-                title: 'Populares',
-                onNextPage: () => moviesProvider.getPopularMovies(),
+              BounceInLeft(
+                child: MovieSlider(
+                  movies: moviesProvider.popularMovies,
+                  title: 'Populares',
+                  onNextPage: () => moviesProvider.getPopularMovies(),
+                ),
+              ),
+              BounceInLeft(
+                child: MovieSlider(
+                  movies: moviesProvider.topRatedMovies,
+                  title: 'Mejores Calificadas',
+                  onNextPage: () => moviesProvider.getTopRatedMovies(),
+                ),
+              ),
+              BounceInLeft(
+                child: MovieSlider(
+                  movies: moviesProvider.upComingMovies,
+                  title: 'Próximas películas',
+                  onNextPage: () => moviesProvider.getUpComingMovies(),
+                ),
               ),
             ],
           ),
