@@ -29,7 +29,7 @@ El siguiente proyecto es una aplicación móvil diseñada para dispositivos Andr
   * ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
     
 * <b>APIs y servicios de terceros:</b>
-  * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tmdb.new.logo.svg/1280px-Tmdb.new.logo.svg.png" alt="Descripción de la imagen" width="300">
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tmdb.new.logo.svg/1280px-Tmdb.new.logo.svg.png" alt="Descripción de la imagen" width="100">
 
 
 ## 💻 Características<a name="caract"></a>
