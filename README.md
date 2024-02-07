@@ -31,7 +31,7 @@ El siguiente proyecto es una aplicación móvil diseñada para dispositivos Andr
 * <b>APIs y servicios de terceros:</b>
   * TMDB API
 
-## 💻 Caracteristicas<a name="caract"></a>
+## 💻 Características<a name="caract"></a>
 
 ### 1. Visualización de películas según categoria
 - Permite a los usuarios visualizar una breve descripción y el reparto de las peliculas ya sea en cartelera, populares, mejores calificadas o próximos estrenos.
