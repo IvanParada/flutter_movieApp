@@ -1,4 +1,4 @@
-<h1 align="center"> UBBMap🚶 </h1>
+<h1 align="center"> InfoMovie 🎦 </h1>
 
 
 **Tabla de contenido**   
